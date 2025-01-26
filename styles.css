@@ -1,0 +1,476 @@
+:root{
+    --text-color: #1a1c20;
+    --link-color: #7e431e;
+    --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif ;
+    background-color: var(--background-color);
+    max-width: 1400px ;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    height: 80px;
+}
+
+nav .left a {
+color: var(--text-color);
+font-size: 35px;
+font-weight: 600;
+}
+
+nav .right a {
+    
+    margin:0 10px; 
+    color: var(--background-color);
+    background-color: #7e431e;
+    padding: 5px 15px;
+    border-radius: 5px;
+    }
+
+   
+
+nav .right a span {
+
+    margin-left: 5px;
+
+}
+
+/* aboutme */
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 30px;
+    
+}
+.aboutme .text {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme .text .welcome{
+
+    display: flex;
+
+}
+
+.aboutme .text .welcome .empty{
+
+    flex:2;
+}
+
+.aboutme .text .welcome .greeting{
+
+    flex:2;
+    
+}
+
+
+.aboutme .text .welcome h2 {
+    font-size: 40px;
+    overflow: hidden;
+    border-right: .15em solid #7e431e;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em; 
+   
+    
+    
+    
+    animation: 
+        typing 3.5s steps(40, end) ,
+        blink-caret .75s step-end infinite; 
+
+
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+ @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #7e431e; }
+  } 
+
+
+.aboutme .text .links{
+    margin-top: 25px;
+}
+
+.aboutme .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px ;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.aboutme .text .links a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+
+.aboutme .pic {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.aboutme .pic img{
+
+    width: 150px;
+    border-radius: 35%;
+
+}
+
+/* section 2 skills */
+
+.skills-section {
+
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+.skills-section h2{
+    text-align: center;
+    font-size: 30px ;
+
+}
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.skills-section .skill_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .skill_list .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px ;
+
+}
+.skills-section .skill_list .skill img{
+
+    width:30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+.skills-section .skill_list .skill span{
+
+font-size: 18px;
+
+}
+
+/* section 3 Projects */
+.projects-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    
+}
+
+.projects-section h2{
+    font-size: 30px ;
+    margin-bottom: 30px;
+}
+
+.projects-section .group{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
+.projects-section .group .project-detail {
+    text-align: center;
+    flex: 2;
+
+}
+.projects-section .group .project-detail img {
+    width: 200px;
+    aspect-ratio: 1.1/1;
+     /* object-fit: cover ;  */
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+.projects-section .group .project-detail h4{
+
+    margin-bottom: 10px ;
+}
+
+
+.projects-section .group .text {
+    flex: 8;
+}
+
+.projects-section .group .text .techstack {
+    border-collapse: collapse;
+    font-size: 12px;
+    
+}
+.projects-section .group .text .techstack td, .projects-section .group .text .techstack th{
+
+    border: 1px solid #7e431e;
+    padding: 3px;
+}
+.projects-section .group .text .techstack tr:nth-child(even){
+    background-color: #e1e1e1;
+}
+
+.projects-section .group .text .techstack tr:hover{
+    background-color: #cfcdcd;
+}
+.projects-section .group .text .techstack th{
+    background-color: #7e431e ;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* section 4 : contact */
+
+.contact-section {
+
+    padding : 0 50px;
+    margin-bottom: 100px;
+
+}
+.contact-section h2{
+    font-size: 30px;
+}
+
+.contact-section .group{
+
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+
+}
+
+.contact-section .group form button{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s ;
+}
+.contact-section .group form button:hover{
+
+    filter: brightness(.9);
+}
+
+
+footer{
+    
+    background: var(--link-color);
+    padding:10px 50px;
+    
+    
+}
+
+
+footer  h5{
+
+    text-align: center;
+    color: #fff;
+}
+
+footer h5 a{
+    color: #fff;
+    font-style: italic;
+    font-size:16px;
+}
+
+
+
+
+
+@media (max-width: 850px){
+
+/* section1 about me*/
+
+.aboutme .text .welcome h2{
+    font-size: 30px;
+
+}
+
+}
+
+@media (max-width: 740px){
+
+    /* section1 about me*/
+    
+    .aboutme {
+        flex-direction: column-reverse;
+    }
+    .aboutme .pic img {
+        width : 130px;
+        
+    }
+
+    /* section 3 Projects*/
+
+    .projects-section{
+
+        text-align: center;
+
+    }
+    .projects-section .group {
+        flex-direction: column;
+    }
+
+    .projects-section .group .project-detail img{
+
+        margin-bottom: 0px;
+    }
+
+
+    .projects-section .group .text {
+
+        margin-bottom: 60px;
+    }
+
+
+
+
+
+    /* section 4 Contact */
+
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+
+    }
+
+@media (max-width: 600px) {
+    /* navbar */
+    nav{
+        padding:0 20px;
+    }
+
+    nav .right a {
+
+        font-size: 22px;
+        color : var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    /* nav .right a:last-child {
+
+        color : var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    } */
+
+
+    nav .right a span {
+        display: none;
+    }
+
+    /* section 1 About me*/
+
+    .aboutme {
+        padding: 0 20px;
+    }
+    .aboutme .text .welcome h2{
+        font-size: 20px;
+    }
+
+    /* section 2 skills */
+    .skills-section{
+        padding: 0 20px;
+
+    }
+    .skills-section .skill_list .skill span{
+        font-size: 16px;
+    }
+
+     /* section 3  Projects*/
+
+     .projects-section{
+
+        padding: 10px 25px;
+     }
+
+
+    /* section 4 Contact */
+
+    .contact-section {
+
+        padding: 0 20px;
+
+    }
+
+}
