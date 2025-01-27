@@ -1,5 +1,6 @@
 ## Personal Portfolio Website
 
+A single-page website having 4 sections: About Me, Skills, Projects, and Contact created to grasp essential concepts of HTML and CSS.
 My site is live at (using Github pages): https://adhu007.github.io/Portfolio-website/ 
 
 or 
