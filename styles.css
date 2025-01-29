@@ -51,6 +51,12 @@ nav .right a {
     border-radius: 5px;
     }
 
+    nav .right a:hover{
+        
+        background-color: var(--background-color);
+        color: var(--text-color);
+       
+    }
    
 
 nav .right a span {
@@ -250,7 +256,7 @@ font-size: 18px;
 
 .projects-section .group .text .techstack {
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 10px;
     
 }
 .projects-section .group .text .techstack td, .projects-section .group .text .techstack th{
